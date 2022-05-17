@@ -1,0 +1,77 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CONFIGURE",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--no-warn-unused-cli",
+                "-DCMAKE_PREFIX_PATH:STRING=C:\\Programs\\Qt\\6.3.0\\msvc2019_64\\lib\\cmake",
+                "-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE",
+                "-S${workspaceRoot}",
+                "-B${workspaceRoot}\\..\\build",
+                "-G", "'Visual Studio 16 2019'",
+                "-T", "host=x64",
+                "-A", "x64"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "BUILD",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build", "${workspaceRoot}\\..\\build",
+                "--config", "Debug",
+                "--target", "ALL_BUILD",
+                "-j", "18",
+                "--"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}\\..\\build"
+            },
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "DEPLOY",
+            "type": "shell",
+            "command": "windeployqt",
+            "args": [
+                "--debug",
+                "--qmldir",
+                "\"${workspaceRoot}\"",
+                "appqt6_cmake_translations.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceRoot}\\..\\build\\Debug"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

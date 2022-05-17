@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "DEBUG",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}\\..\\build\\Debug\\appqt6_cmake_translations.exe",
+            "args": [],
+            "cwd": "${workspaceRoot}\\..\\build\\Debug",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "logging": {
+                "moduleLoad": false
+            },
+            "internalConsoleOptions": "openOnSessionStart"
+            //,"preLaunchTask": "DEPLOY"
+        }
+    ]
+}
