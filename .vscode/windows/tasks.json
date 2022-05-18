@@ -7,7 +7,7 @@
             "command": "cmake",
             "args": [
                 "--no-warn-unused-cli",
-                "-DCMAKE_PREFIX_PATH:STRING=/Users/scillman/Programs/Qt/6.3.0/macos/lib/cmake",
+                "-DCMAKE_PREFIX_PATH:STRING=C:\\Programs\\Qt\\6.3.0\\msvc2019_64\\lib\\cmake",
                 "-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE",
                 "-S${workspaceRoot}",
                 "-B${workspaceRoot}\\..\\build",

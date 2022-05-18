@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 
+set(CMAKE_PREFIX_PATH "/Users/scillman/Programs/Qt/6.3.0/macos/lib/cmake")
+
 set(CMAKE_PROJECT_NAME qt6_cmake_translations)
 
 project(${CMAKE_PROJECT_NAME} VERSION 0.1 LANGUAGES CXX)

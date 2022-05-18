@@ -1,0 +1,19 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+        //,"build/": true
+    },
+    "files.associations": {
+        "*.ts": "xml"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "terminal.integrated.cwd": "${workspaceRoot}",
+    "terminal.integrated.env.windows": {
+        "PATH": "${env:PATH};C:\\Programs\\Qt\\6.3.0\\msvc2019_64\\bin"
+    }
+}

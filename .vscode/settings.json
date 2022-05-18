@@ -11,9 +11,11 @@
     "files.associations": {
         "*.ts": "xml"
     },
-    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    //"C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
     "terminal.integrated.cwd": "${workspaceRoot}",
-    "terminal.integrated.env.windows": {
-        "PATH": "${env:PATH};C:\\Programs\\Qt\\6.3.0\\msvc2019_64\\bin"
-    }
+    "terminal.integrated.env.osx": {
+        "PATH": "${env:PATH}:/Users/scillman/Programs/Qt/6.3.0/macos/bin:/Users/scillman/Programs/Qt/Tools/CMake/CMake.app/Contents/bin"
+    },
+    "cmake.cmakePath": "/Users/scillman/Programs/Qt/Tools/CMake/CMake.app/Contents/bin/cmake",
+    "cmake.configureOnOpen": true
 }

@@ -6,19 +6,16 @@
     "configurations": [
         {
             "name": "DEBUG",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/build/appqt6_cmake_translations.app/Contents/MacOS/appqt6_cmake_translations",
+            "program": "${workspaceRoot}\\..\\build\\Debug\\appqt6_cmake_translations.exe",
             "args": [],
-            "cwd": "${workspaceRoot}/build",
-            "stopAtEntry": true,
-            "MIMode": "lldb",
-            //"miDebuggerPath": "/Users/scillman/.vscode/extensions/ms-vscode.cpptools-1.9.8-darwin-x64/debugAdapters/lldb-mi/bin/lldb-mi",
-            //"miDebuggerArgs": "-n",
+            "cwd": "${workspaceRoot}\\..\\build\\Debug",
+            "stopAtEntry": false,
+            "console": "internalConsole",
             "logging": {
                 "moduleLoad": false
             },
-            "externalConsole": false,
             "internalConsoleOptions": "openOnSessionStart"
             //,"preLaunchTask": "DEPLOY"
         }
